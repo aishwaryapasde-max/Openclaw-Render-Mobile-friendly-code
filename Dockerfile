@@ -9,5 +9,5 @@ ENV NODE_OPTIONS="-r /root/hijack.js"
 
 EXPOSE 18789
 
-# Direct start without the config set command
-CMD ["openclaw", "gateway", "--verbose"]
+# Bypass unconfigured error and start
+CMD ["openclaw", "gateway", "--verbose", "--allow-unconfigured"]
